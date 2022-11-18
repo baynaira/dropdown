@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="C:\Users\abola\kwasu folder\dropdown\dropdown.css">
+    <script src="https://kit.fontawesome.com/12591c9758.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+           <img src="logo.svg" alt="">
+           <div class="nav-links" id="navLinks">
+            <img src="icon-close-menu.svg" alt="" id="menu" onclick="hideMenu()">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                </ul>
+           </div>
+           <img src="icon-menu.svg" alt="" id="menu2" onclick="showMenu()">
+        </nav>
+    </section>
+
+    <div class="section">
+        <div class="col-md-6">
+             <h1>   Make remote work</h1>
+             <p>Get your team in sync, no matter your location.<br>
+                Streamline processes, create team ritual, and<br>
+                watch productive soar.</p>
+        
+
+         <input type="submit" value="Learn more">
+        
+
+
+        </div>
+        <div class="col-md-6"><!-- image-->
+            <picture>
+                    <source srcset="image-hero-mobile.png" media="(max-width: 420px)" width="370">
+                <img  id="logo" src="image-hero-desktop.png" alt="" width="400">
+            </picture>
+           
+        
+        </div>
+        
+    </div>
+    
+    -<!---javascript toogle menu-->
+    
+<script>
+    var navLinks = document.getElementById("navLinks")
+    
+    function showMenu(){
+        navLinks.style.right = "0";  
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";  
+    }
+
+
+
+
+</script> 
+
+
+
+
+
+
+
+    
+</body>
+</html>
